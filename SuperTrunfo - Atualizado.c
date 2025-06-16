@@ -12,7 +12,6 @@ int main() {
     printf("Digite o número da opção desejada: ");
     scanf("%d", &menu);
 
-    // Limpar o buffer de entrada
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
 
@@ -29,11 +28,11 @@ int main() {
             char codigo_cartaA, codigo_cartaB, nome_cidadeA[50], nome_cidadeB[50];
             float super_poderA, super_poderB;
 
-            // Entrada dos dados da Carta 1
+            // Dados da Carta 1
             printf("Carta 1:\n");
             printf("Digite o nome da cidade: ");
             fgets(nome_cidadeA, sizeof(nome_cidadeA), stdin);
-            // Remover a nova linha do final da string
+            
             for (int i = 0; nome_cidadeA[i] != '\0'; i++) {
                 if (nome_cidadeA[i] == '\n') {
                     nome_cidadeA[i] = '\0';
@@ -100,11 +99,11 @@ int main() {
             printf("Densidade Populacional: %.2f hab/Km²\n", densidade_populacionalA);
             printf("Pib per Capita: %.2f reais\n", pib_per_capitaA);
 
-            // Entrada dos dados da Carta 2
+            // Dados da Carta 2
             printf("\nCarta 2:\n");
             printf("Digite o nome da cidade: ");
             fgets(nome_cidadeB, sizeof(nome_cidadeB), stdin);
-            // Remover a nova linha do final da string
+            
             for (int i = 0; nome_cidadeB[i] != '\0'; i++) {
                 if (nome_cidadeB[i] == '\n') {
                     nome_cidadeB[i] = '\0';
