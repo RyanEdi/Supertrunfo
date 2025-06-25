@@ -16,7 +16,7 @@ int main() {
     while ((c = getchar()) != '\n' && c != EOF);
 
     switch (menu) {
-        case 1: { // Iniciar jogo
+        case 1: {
             printf("Iniciando Jogo...\n");
 
             // Declaração de variáveis
