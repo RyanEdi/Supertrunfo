@@ -49,8 +49,8 @@ int main() {
     switch (cavalo) {
         case 1:
             printf("Movimento C3 -> B1\n");
-            for (int i = 0; i < 2; i++) { // Loop externo: movimentos verticais
-                for (int j = 0; j < 1; j++) { // Loop interno: movimentos horizontais
+            for (int i = 0; i < 2; i++) { 
+                for (int j = 0; j < 1; j++) {
                     printf("Baixo\n");
                 }
             }
